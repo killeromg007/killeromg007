@@ -1,17 +1,6 @@
 // JavaScript for interactive features can be added here.
 
 // Smooth scrolling for navigation links
-window.onloadTurnstileCallback = function () {
-    turnstile.render("#example-container", {
-      sitekey: "<0x4AAAAAAA2B3HL2JkZAE-Hl>",
-      callback: function (token) {
-        console.log(`Challenge Success ${token}`);
-        setTimeout(()  => {
-          document.getElementById("example-container").style.display = "none";
-        }, 2000);
-      },
-    });
-  };
 
 
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
