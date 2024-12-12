@@ -3,7 +3,7 @@
 // Smooth scrolling for navigation links
 window.onloadTurnstileCallback = function () {
   turnstile.render("#example-container", {
-    sitekey: "<YOUR_SITE_KEY>",
+    sitekey: "<0x4AAAAAAA2B3HL2JkZAE-Hl>",
     callback: function (token) {
       console.log(`Challenge Success ${token}`);
     },
