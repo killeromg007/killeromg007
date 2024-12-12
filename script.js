@@ -1,6 +1,16 @@
 // JavaScript for interactive features can be added here.
 
 // Smooth scrolling for navigation links
+window.onloadTurnstileCallback = function () {
+  turnstile.render("#example-container", {
+    sitekey: "<YOUR_SITE_KEY>",
+    callback: function (token) {
+      console.log(`Challenge Success ${token}`);
+    },
+  });
+};
+
+
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
